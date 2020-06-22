@@ -1,0 +1,13 @@
+<div class="container-fluid mt-5">
+    <h5>Trending GIFs</h5>
+    <div class="gifs-section">
+        <div *ngFor="let slide of trendingGifs; let i=index" class="p-2">
+            <!-- <a [href]="slide.images.original.url" target=" _blank "> -->
+            <img [src]="slide.images.fixed_height.webp " [alt]="slide.title ">
+            <!-- </a> -->
+        </div>
+    </div>
+    <div *ngIf="showSpinner">
+        <app-spinner></app-spinner>
+    </div>
+</div>

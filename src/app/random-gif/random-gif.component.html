@@ -1,0 +1,18 @@
+<div class="container-fluid mt-5">
+    <div class="random-section mt-5">
+        <h5>
+            Such random, much wow!
+            <img src="https://cdn.shopify.com/s/files/1/1061/1924/products/Thinking_Face_Emoji_large.png?v=1571606036" height="30" width="30">
+        </h5>
+        <div *ngIf="showSpinner">
+            <app-spinner></app-spinner>
+        </div>
+        <div class="p-3">
+            <!-- <a [href]="randomGif.images.original.url" target=" _blank "> -->
+            <ng-container *ngIf="randomGif">
+                <img [src]="randomGif.data.images.original.webp " [alt]="randomGif.data.title ">
+            </ng-container>
+            <!-- </a> -->
+        </div>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container-fluid mt-3">
+    <h2><a routerLink="">GIPHY DUMMY</a></h2>
+    <form (ngSubmit)="onClickSearch()">
+        <div class="search-bar">
+            <input type="text" class="form-control" placeholder="Search for GIFs here" [(ngModel)]="queryString" [ngModelOptions]="{standalone: true}">
+            <button type="submit" class="btn btn-secondary" name="search">
+          Search
+        </button>
+        </div>
+    </form>
+    <a id="random-gif" routerLink="random"><i>How about a random GIF to spice up your day?</i></a>
+</div>
+<router-outlet></router-outlet>

@@ -1,0 +1,17 @@
+.search-bar {
+    display: flex;
+    flex-wrap: no-wrap;
+}
+
+h2 a {
+    text-decoration: none;
+    color: white
+}
+
+#random-gif {
+    color: aquamarine;
+}
+
+#random-gif:hover {
+    color: blueviolet;
+}
